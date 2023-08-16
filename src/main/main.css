@@ -1,0 +1,136 @@
+.main_div {
+    margin-top: 90px;
+    background-color: #FCF5FF;
+    padding: 69px 9% 19px 9%;
+    margin-bottom: 89px;
+}
+
+.main_header {
+    text-align: center;
+}
+
+.main_header>h2 {
+    color: #3B0098;
+    margin-bottom: 15px;
+}
+
+.main_header>p {
+    width: 1055px;
+    margin: auto;
+    font-size: 16px;
+    margin-bottom: 29px;
+}
+
+.main_slide {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.main_slider {
+    transition: 1s ease-in-out;
+    /* transform: translateX(-200%); */
+    background-color: #FFf;
+    margin: 10px;
+    width: 392px;
+    height: 328px;
+    padding: 36px 16px;
+    border-radius: 50px;
+    box-shadow: rgba(209, 209, 210, 0.2)0px 3px 0px 2px;
+}
+
+.main_slider_img {
+    width: 341px;
+    height: 178px;
+
+}
+
+.main_slide_title {
+    text-align: center;
+}
+
+.main_slide_title>h3 {
+    color: #00005B;
+    font-size: 20px;
+    margin-top: 26px;
+}
+
+.main_slide_title>p {
+    font-size: 16px;
+    margin-top: 26px;
+}
+
+.main_button {
+    padding: 0;
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+.main_button>button {
+    border: none;
+    outline: none;
+    background-color: #FCF5FF;
+    margin-left: auto;
+}
+
+.leftarrow {
+    font-size: 100px;
+    margin-right: 100px;
+}
+
+.rightarrow {
+    font-size: 100px;
+}
+
+.left {
+    color: #3B0098;
+}
+
+.right {
+    color: #e1e0e0;
+}
+
+@media(max-width:900px) {
+    .main_div {
+        margin-top: 90px;
+        padding: 69px 1% 19px 1%;
+        margin-bottom: 89px;
+    }
+
+    .main_header>p {
+        margin: auto 10px;
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+   
+
+    .main_button {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .leftarrow {
+        font-size: 50px;
+    }
+
+    .rightarrow {
+        font-size: 50px;
+        margin-right: 0;
+    }
+}
+@media(max-width:430px){
+    .main_slider {
+        margin: 15px 10px 5px 10px;
+        width: 100%;
+        height: auto;
+        padding: 18px 8px 28px 8px;
+    }
+
+    .main_slider_img {
+        width: 90vw;
+        height: auto;
+    }
+}

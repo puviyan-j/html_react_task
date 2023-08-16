@@ -1,0 +1,210 @@
+.react_page {
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+    margin-bottom: 110px;
+}
+
+.react_page>h1 {
+    font-size: 90px;
+    color: #3B0098;
+    margin-bottom: 93px;
+}
+
+.react_page_heading>h3 {
+    color: #3B0098;
+    font-size: 30px;
+    margin-bottom: 27px;
+}
+
+.react_page_heading>p {
+    color: #444444;
+    font-size: 16px;
+    margin-bottom: 33px;
+}
+
+.react_section {
+    padding: 0 24%;
+    margin-bottom: 43px;
+
+}
+
+.react_section>ul {
+    display: flex;
+    height: 64px;
+    background-color: #EEEEEE;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.react_section>ul>li {
+    list-style: none;
+    font-size: 16px;
+    width: 33%;
+    padding: 24px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.selected {
+    background: linear-gradient(45deg, #491BA0, #8C51FF);
+    color: #fff;
+
+}
+
+.react_slide {
+    display: flex;
+    justify-content: center;
+    padding: 0 24%;
+
+}
+
+.react_slide_section {
+    width: 250px;
+    height: 280px;
+    margin: 0 12px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(209, 209, 210, 0.2)0px 3px 0px 2px;
+}
+
+.react_slide_view {
+    width: 250px;
+    height: 280px;
+    border-radius: 50px;
+
+
+}
+
+.react_slide_view>img {
+    width: 250px;
+    height: 280px;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    transform: rotateY(0deg);
+    z-index: -2;
+}
+
+.react_slide_view ::before {
+    content: "";
+    width: 250px;
+    height: 280px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -25px;
+    left: -60px;
+    z-index: -1;
+    background: linear-gradient(rgb(254, 252, 252, 0.1), rgb(27, 27, 29));
+}
+
+.react_slide_view>h4 {
+    position: absolute;
+    bottom: 25px;
+    left: 60px;
+    color: #FFFF;
+    z-index: 1;
+}
+
+.react_slide_content-condent {
+    max-width: 249px;
+    height: 279px;
+    border-radius: 50px;
+    padding: 0 33px;
+    position: absolute;
+    top: 2px;
+    transform: rotateY(180deg);
+    transition: 0.5s ease-in-out;
+    z-index: -3;
+    background: linear-gradient(45deg, #491BA0, #8C51FF)
+}
+
+.react_slide_content-condent>h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 37px;
+}
+
+.react_slide_content-condent>p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 22px;
+}
+
+.react_slide_content-condent>button {
+    margin-top: 21px;
+    padding: 12px 28px;
+    border: none;
+    outline: none;
+    border-radius: 4.5px;
+}
+
+.react_slide_section:hover .react_slide_content-condent {
+    z-index: 3;
+    transition: 0.5s ease-in-out;
+    transform: rotateY(0);
+}
+
+.react_slide_section:hover .react_slide_view ::before {
+    z-index: -1;
+    background: linear-gradient(#fff, #fff);
+}
+
+.react_slide_section:hover .react_slide_view>img {
+    transform: rotateY(180deg);
+    transition: 0.5s ease-in-out;
+}
+@media(max-width:900px){
+    .react_page>h1 {
+        font-size: 45px;
+        margin-bottom: 47px;
+    }
+    .react_page_heading>h3
+    {
+        margin:  auto 10px 15px 10px;
+    }
+    .react_page_heading>p {
+        line-height: 1.5;
+      margin:  auto 10px 15px 10px;
+       
+    }
+    .react_section {
+        padding: 0 10px;
+        margin-bottom: 43px;
+    
+    }
+    
+    .react_section>ul {
+        height: 64px;
+    }
+    
+    .react_section>ul>li {
+        font-size: 16px;
+        padding: 24px ;
+    }
+    .react_slide {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 16px;
+        overflow-x: scroll;
+    }
+    .react_slide_view {
+       
+        overflow-x: hidden;
+    }   
+    
+}
+@media (max-width :450px){
+    .react_section>ul {
+        height: 32px;
+    }
+    
+    .react_section>ul>li {
+        font-size: 8px;
+        padding: 32px 24px ;
+    }
+}

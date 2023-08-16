@@ -1,0 +1,183 @@
+.header {
+    width: 100vw;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.header_head {
+    width: 100%;
+    text-align: center;
+    color: #3B0098;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.header_section {
+    background-color: #FCF5FF;
+    /* height: 436px; */
+}
+
+.header_section_padding {
+    padding: 37px 9%;
+    display: flex;
+    position: relative;
+}
+
+.header_title {
+    padding-top: 16px;
+    width: 449px;
+}
+
+.header_title>h2 {
+
+    font-size: 26px;
+    color: #3B0098;
+    padding-right: 16px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.header_title>h2>span {
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.header_content {
+    padding-top: 16px;
+    color: #444444;
+    font-size: 16px;
+    line-height: 2;
+
+}
+
+.carosal {
+    width: 995px;
+    display: flex;
+    overflow-x: hidden;
+
+}
+
+.carosal_name {
+    text-align: center;
+    min-width: 330px;
+    height: 340px;
+    margin: 0 12px 0 60px;
+    border-radius: 50px;
+    background: rgb(177, 0, 255);
+    background: linear-gradient(86deg, rgba(177, 0, 255, 1) 0%, rgba(88, 0, 255, 1) 38%);
+    transition: 1s ease-in;
+}
+
+.carosal_name>span {
+    display: inline-block;
+    font-size: 24px;
+    color: #FFFF;
+    text-transform: capitalize;
+    margin-bottom: 37px;
+    font-weight: bold;
+    transform: translateY(270px);
+
+}
+
+.carosal_name_small {
+
+    width: 140px;
+    height: 340px;
+    background: rgb(177, 0, 255);
+    background: linear-gradient(90deg, #B100FF, #5800FF);
+    border-radius: 50px;
+    margin: 0 12px;
+    transition: 1s ease-in;
+}
+
+.carosal_name_small>span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    text-transform: capitalize;
+    transform: rotate(-90deg);
+    margin-top: 250px;
+    margin-left: 100px;
+
+}
+
+.prev {
+    transition: 1s ease-in;
+    transform: translateX(240px);
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    bottom: 50px;
+    width: 100px;
+}
+
+.button>button {
+    margin-right: 80px;
+    border: none;
+    outline: none;
+    background-color: #FCF5FF;
+}
+
+@media(max-width:900px) {
+    .header_head {
+        font-size: 45px;
+    }
+
+    .header {
+        overflow-y: hidden;
+        padding: 0 2%;
+    }
+
+    .header_section_padding {
+        display: block;
+        position: static;
+        padding: 37px 0;
+        width: 100%;
+    }
+
+    .carosal {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .button {
+        position: static;
+    }
+
+    .carosal_name {
+        margin: 0 12px 0 auto;
+        min-width: 300px;
+    }
+
+    .header_title {
+        width: 100%;
+    
+    }
+
+    .header_title>h2 {
+        padding-right: 0;
+        overflow-x: hidden;
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    .header_title>h2>span {
+        font-size: 25px;
+    }
+
+    .button {
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 20px 10px 10px 10px;
+    }
+
+    .button>button {
+        margin-right: 0;
+    }
+}
